@@ -1,0 +1,341 @@
+@font-face{
+    font-family: Augusta;
+                src: url(/assets/font/Augusta/Augusta.ttf);
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+* p, li,h1{
+    color: white;
+}
+
+
+.body{
+    display: grid;
+    grid-template-rows: 4;
+    grid-template-columns: 1;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* ----------------- INICIO: HEADER ----------------- */
+.header{
+    grid-area: header;
+    background-image: url(/assets/img/header/Banner3.jpg);
+    /* ACA */
+    background-size: cover; 
+}
+
+.header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+}
+.header img{
+    width: 45%;
+}
+/* ----------------- FINAL: HEADER ----------------- */
+
+
+/* ----------------- INICIO: NAV ----------------- */
+.nav{
+    grid-area: nav;
+    background-color: azure;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorNav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 75%;
+    height: auto;
+    margin: 10px;
+}
+
+.nav a{
+    font-family: Augusta;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+/* ----------------- FINAL: NAV ----------------- */
+
+/* ----------------- INICIO: MAIN ----------------- */
+.main{
+    grid-area: main;
+    background-image: url(/assets/img/inicio/FondoMain.jpg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 85%;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+}
+
+.contenedorMain h1{
+    display: flex;
+    justify-self: center;
+    align-self: flex-start;
+
+    font-size: 45px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.contenedorMain p{
+    text-align: justify;
+    margin: 15px;
+    font-size: 25px;
+    /* text-indent: 10px; */
+}
+
+.contenedorMain img{
+    width: 80%;
+    justify-self: center;
+}
+
+.articleMainInicio{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 80% 20%;
+}
+
+/* ----------------- FINAL: MAIN ----------------- */
+
+
+/* ----------------- INICIO: FOOTER ----------------- */
+.footer{
+    grid-area: footer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 200px;
+    background-image: url(/assets/img/footer/bloodborne-banner2.jpg);
+    background-size: cover;
+}
+
+.contenedorFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 85%;
+}
+
+.redes{
+    border: 1px solid red;
+    width: 30%;
+    height: 200px;
+}
+.fromSofware{
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: white;
+    justify-self: center;
+}
+.fromSofware img{
+    justify-self: center;
+    width: 500px;
+    padding: 20px;
+}
+
+.otrosJuegos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red;  */  
+    width: 30%; 
+    height: 200px;
+}
+
+.otrosJuegos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid white; */
+}
+
+.otrosJuegos h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.otrosJuegos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otrosJuegos a img{
+    width: 80%;
+}
+/* ----------------- FINAL: FOOTER ----------------- */
+
+
+/* ----------------- INICIO: HISTORIA ----------------- */
+.articleMainHistoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.articleMainHistoria p{
+    text-indent: 20px;
+}
+
+/* ----------------- FINAL: HISTORIA ----------------- */
+.articleMainEscenarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.articleMainEscenarios img{
+    width: 85%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* ----------------- INICIO: JEFES ----------------- */
+.mainJefes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navJefes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 50%;
+    margin: 20px;
+    background-color: bisque;
+    border: 1px solid azure;
+    border-radius: 5px;
+}
+
+.navJefes a{
+    text-decoration: none;
+    font-size: 35px;
+    color: black;
+}
+
+.videoJefes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoJefes iframe{
+    width: 60%;
+    height: 500px;
+    margin: 15px;
+}
+
+/* ----------------- FINAL: JEFES ----------------- */
+
+/* ------------- INICIO: PRODUCTOS -------------*/
+.mainProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.contenedorProducto{
+    display: 1;
+    flex-direction: column;
+
+    width: 400px;
+    height: auto;
+    border: 1px solid azure;
+    margin: 15px;
+}
+
+.contenedorProducto h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* .contenedorProducto p{
+    font-size: 45px;
+    margin: 20px;
+    margin-bottom: 100px;
+    text-align: justify;
+} */
+
+.contenedorProducto div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorProducto img{
+    width: 50%;
+    height: auto;
+}
+
+.contenedorProducto button{
+    border: 3px solid azure;
+    border-radius: 15px;
+    border-color: gray;
+
+    background-color: white;
+    margin: 20px;
+}
+
+.contenedorProducto button a{
+    font-size: 30px;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+/* ------------- FIN: PRODUCTOS -------------*/

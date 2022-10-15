@@ -1,0 +1,623 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{ 
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+
+
+    background-image: url(/PreEntrega-2/assets2/img/inicio/FondoCiudad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ----------------- INICIO: HEADER ----------------- */
+.header{
+    grid-area: header;
+    background-image: url(/PreEntrega-2/assets2/img/header/Banner3.jpg);
+    background-size: cover;
+    background-position: 0% 20%;
+    background-repeat: no-repeat; 
+}
+
+.header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+}
+
+.header img{
+    width: 40%;
+}
+/* ----------------- FINAL: HEADER ----------------- */
+
+
+/* ----------------- INICIO: NAV ----------------- */
+.nav{ 
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+   
+    background-color: azure;
+}
+
+.navContenedor{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 80%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.navContenedor a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+/* ----------------- FINAL: NAV ----------------- */
+
+/* ----------------- INICIO: MAIN ----------------- */
+.mainInicio{
+    display: grid;
+    grid-template-rows: 6;
+    grid-template-columns: 6;
+    grid-template-areas: 
+    "header header header header header header"
+    "texto1 texto1 texto1 texto1 imagen1 imagen1"
+    "texto2 texto2 texto2 texto2 imagen1 imagen1"
+    "texto3 texto3 texto3 texto3 texto3 texto3"
+    "texto4 texto4 texto4 texto4 texto4 texto4"
+    "separador1 separador1 separador1 separador1 separador1 separador1";
+
+    background-image: url(/PreEntrega-2/assets2/img/inicio/FondoMain3.jpg);
+    background-size: cover;
+
+    width: 80%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 3px;
+}
+.mainInicio h1{
+    grid-area: header;
+    justify-self: flex-start;
+    font-size: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+
+.mainInicio p{
+    text-align: justify; 
+    
+    font-size: 25px;
+    text-indent: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mainInicio p:nth-child(2){
+    grid-area: texto1;
+    align-self: center;
+}
+
+.mainInicio p:nth-child(3){
+    grid-area: texto2;
+}
+
+.mainInicio img{
+    grid-area: imagen1;
+    width: 85%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.mainInicio p:nth-child(5){
+    grid-area: texto3;
+    padding-bottom: 20px;
+}
+
+.mainInicio p:nth-child(6){
+    grid-area: texto4;
+    padding-bottom: 20px;
+}
+/* ----------------- FINAL: MAIN ----------------- */
+
+/* ----------------- INICIO: FOOTER ----------------- */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+    background-color: bisque;
+}
+
+.footerContenedor{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    width: 80%;
+}
+
+.footerRedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 30%;
+    /* border: 1px solid blue; */
+}
+
+.footerRedes li{
+    list-style:none;
+    
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.footerRedes h2{
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 8px;
+    margin: 15px 15px 15px 0px;
+    padding: 10px 25px 10px 25px;
+}
+
+.footerRedes a{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 25%;
+    grid-template-areas: 
+    "imagenRedes textoRedes textoRedes textoRedes";
+
+    color: black;
+    text-decoration: none;
+}
+
+.footerRedes p{
+    grid-area: textoRedes;
+    justify-self: flex-start;
+    align-self: center;
+
+    font-size: 20px;
+}
+
+.footerRedes img{
+    grid-area: imagenRedes;
+    justify-self: flex-end;
+    align-self: center;
+
+    width: 30%;
+    margin-right: 10px;
+}
+
+.footerJuegos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 30%;
+    /* border: 1px solid blue; */
+}
+
+.footerJuegos li{
+    list-style:none;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.footerJuegos h2{
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 8px;
+    margin: 15px 15px 15px 0px;
+    padding: 10px 25px 10px 25px;
+}
+
+.footerJuegos a{
+    display: grid;
+    grid-template-rows: 4;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: 
+    "imagenJuegos  textoJuegos";
+
+    color: black;
+    text-decoration: none;
+}
+
+.footerJuegos p{
+    grid-area: textoJuegos;
+    justify-self: flex-start;
+    align-self: center;
+    font-size: 20px;
+}
+
+.footerJuegos img{
+    grid-area: imagenJuegos;
+    justify-self: flex-end;
+    align-self: center;
+
+    width: 30%;
+    margin-right: 10px;
+}
+
+.footerContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 30%;
+    height: auto;
+    /* border: 1px solid blue; */
+}
+
+.footerContacto h2{
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 8px;
+    margin: 15px 15px 15px 0px;
+    padding: 10px 25px 10px 25px;
+}
+
+.footerContacto h3{
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.footerContacto ul{
+    padding-left: 25px;
+}
+
+.footerContacto li{
+    text-align: justify;
+    margin-bottom: 5px;
+    list-style: disc;
+}
+
+.footerContacto div{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footerContacto div button a{
+    text-decoration: none;
+    color: black;
+}
+
+.footerContacto div button{
+    padding: 10px;
+}
+/* ----------------- FINAL: FOOTER ----------------- */
+
+
+/* ----------------- INICIO: HISTORIA ----------------- */
+
+.mainHistoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: auto;
+    /* border: 1px solid red; */
+}
+
+.articuloHistoria{
+    background-image: url(/PreEntrega-2/assets2/img/inicio/FondoMain3.jpg);
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.articuloHistoria h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.articuloHistoria p{
+    text-align: justify;
+    text-indent: 30px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+/* ----------------- FINAL: HISTORIA ----------------- */
+
+
+
+/* ----------------- INICIO: ESCENARIOS ----------------- */
+.mainEscenarios{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+
+    display: grid;
+    grid-template-rows: 5;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "mapa mapa textoMapa textoMapa"
+    "mapa mapa textoMapa textoMapa"
+    "mapa mapa textoMapa textoMapa"
+    "mapa mapa textoMapa textoMapa"
+    "mapa mapa textoMapa textoMapa";
+
+    width: 80%;
+   /*  border: 1px solid red; */
+}
+
+.mapaEscenarios{
+    grid-area: mapa;
+    display: flex;
+    align-items: flex-start;
+
+
+    position: relative;
+    z-index: 2;
+    border: 5px solid green;
+}
+.mapaEscenarios img{ 
+    /* display: none; */
+    padding: 5px;
+    width: 100%; 
+}
+
+
+.textoEscenarios{
+    grid-area: textoMapa;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.zona1{
+    position: absolute;
+    top: 0%;
+    z-index: auto;
+    z-index: 1;
+}
+
+.zona16, .zona2, .zona3, .zona4, .zona5,
+.zona6, .zona7, .zona8, .zona9, .zona10,
+.zona11, .zona12, .zona13, .zona14, .zona15{
+    position: absolute;
+    top: 0%;
+    z-index: auto;
+    visibility: hidden;
+}
+
+.zona1{
+    z-index: 1;
+}
+
+.textoEscenarios h1{
+    font-size: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.textoEscenarios p{
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+
+.elipse1{
+    position: absolute;
+    border: 1px solid blue;
+    width: 10%;
+    height: 3%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 2.6%;
+    left: 10.5%;
+
+}
+
+.elipse2{
+    position: absolute;
+    border: 1px solid blue;
+    width: 10.8%;
+    height: 2.2%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 4.5%;
+    left: 32.7%;
+}
+
+.elipse3{
+    position: absolute;
+    border: 1px solid blue;
+    width: 11.2%;
+    height: 3%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 5.9%;
+    left: 59.6%;
+}
+
+.elipse4{
+    position: absolute;
+    border: 1px solid blue;
+    width: 9.8%;
+    height: 2%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 14%;
+    left: 79.2%;
+}
+
+.elipse5{
+    position: absolute;
+    border: 1px solid red;
+    width: 10%;
+    height: 5.5%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 57.7%;
+    left: 87.3%;
+}
+
+.elipse6{
+    position: absolute;
+    border: 1px solid red;
+    width: 6.5%;
+    height: 3.5%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 57.8%;
+    left: 73.8%;
+}
+
+.elipse7{
+    position: absolute;
+    border: 1px solid red;
+    width: 8.5%;
+    height: 5%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 67.2%;
+    left: 58.8%;
+}
+
+.elipse8{
+    position: absolute;
+    border: 1px solid red;
+    width: 12.5%;
+    height: 4%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 89.7%;
+    left: 68.8%;
+}
+
+.elipse9{
+    position: absolute;
+    border: 1px solid red;
+    width: 9%;
+    height: 3.5%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 81.5%;
+    left: 72.8%;
+}
+
+.elipse10{
+    position: absolute;
+    border: 1px solid red;
+    width: 10.8%;
+    height: 7.5%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 85.5%;
+    left: 3.5%;
+}
+
+.elipse11{
+    position: absolute;
+    border: 1px solid red;
+    width: 9%;
+    height: 6.8%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 65.2%;
+    left: 36.8%;
+}
+
+.elipse12{
+    position: absolute;
+    border: 1px solid red;
+    width: 9%;
+    height: 6%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 47.2%;
+    left: 24.8%;
+}
+
+.elipse13{
+    position: absolute;
+    border: 1px solid red;
+    width: 8.4%;
+    height: 5.8%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 51.2%;
+    left: 42.4%;
+}
+
+.elipse14{
+    position: absolute;
+    border: 1px solid red;
+    width: 6.5%;
+    height: 4%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 58.2%;
+    left: 57.8%;
+}
+
+.elipse15{
+    position: absolute;
+    border: 1px solid red;
+    width: 6%;
+    height: 4.1%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 46%;
+    left: 58.8%;
+}
+
+.elipse16{
+    position: absolute;
+    border: 1px solid red;
+    width: 5.5%;
+    height: 4.2%;
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 40.8%;
+    left: 57.5%;
+}
+
+
+/* ----------------- FINAL: ESCENARIOS ----------------- */
