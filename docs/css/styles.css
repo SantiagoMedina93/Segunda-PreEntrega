@@ -87,6 +87,19 @@
     box-shadow: 10px 5px 5px black;
 }
 
+.textoInicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoInicio iframe{
+    width: 80%;
+    height: 50vh;
+    border-radius: 15px;
+}
+
 .textoImagenInicio{
     display: grid;
     grid-template-rows: 3;
@@ -131,7 +144,7 @@
     
     color: azure;
     font-size: 25px;
-    text-indent: 15px;
+    text-indent: 10px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -331,6 +344,10 @@
 }
 
 .articuloHistoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     background-color: rgb(75, 75, 75, .6);
     border-radius: 15px;
     box-shadow: 10px 5px 5px black;
@@ -349,10 +366,28 @@
 .articuloHistoria p{
     color: azure;
     text-align: justify;
-    text-indent: 30px;
+
+    line-height: 30px;
+    text-indent: 10px;
+    font-size: 20px;
+
     margin-bottom: 15px;
     padding-left: 5px;
 }
+
+.imgHistoria figure{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+
+.imgHistoria figure img{
+    width: 40%;
+    border-radius: 10px;
+}
+
+
 /* ----------------- FINAL: HISTORIA ----------------- */
 
 
