@@ -326,19 +326,22 @@
 }
 
 .articuloHistoria{
-    background-image: url(./assets2/img/inicio/FondoMain3.jpg);
-    background-size: cover;
+    background-color: rgb(75, 75, 75, .6);
+    border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
 }
 
 .articuloHistoria h1{
+    color: azure;
+    border-bottom: 2px solid rgb(20, 20, 20);
     font-size: 40px;
     margin-bottom: 15px;
 }
 
 .articuloHistoria p{
+    color: azure;
     text-align: justify;
     text-indent: 30px;
     margin-bottom: 15px;
