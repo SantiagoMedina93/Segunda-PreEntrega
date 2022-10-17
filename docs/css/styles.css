@@ -87,7 +87,7 @@
 
 .textoInicio iframe{
     width: 80%;
-    height: 50vh;
+    height: 60vh;
     border-radius: 15px;
 }
 
@@ -372,12 +372,10 @@
     margin-bottom: 15px;
 }
 
-
 .imgHistoria figure img{
     width: 40%;
     border-radius: 10px;
 }
-
 
 /* ----------------- FINAL: HISTORIA ----------------- */
 
@@ -385,81 +383,61 @@
 
 /* ----------------- INICIO: ESCENARIOS ----------------- */
 .mainEscenarios{
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; */
-
-    display: grid;
-    grid-template-rows: 5;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-areas: 
-    "mapa mapa textoMapa textoMapa"
-    "mapa mapa textoMapa textoMapa"
-    "mapa mapa textoMapa textoMapa"
-    "mapa mapa textoMapa textoMapa"
-    "mapa mapa textoMapa textoMapa";
+    align-items: flex-start;
 
     width: 80%;
-   /*  border: 1px solid red; */
 }
 
 .mapaEscenarios{
-    grid-area: mapa;
     display: flex;
     align-items: flex-start;
+    width: 50%;
+    margin-top: 40px;
+    margin-right: 10px;
 
-
-    position: relative;
-    z-index: 2;
-    border: 5px solid green;
 }
 
 .mapaEscenarios img{ 
-    /* display: none; */
-    padding: 5px;
     width: 100%; 
 }
 
 .textoEscenarios{
-    grid-area: textoMapa;
-    position: relative;
-    background-color: aliceblue;
-}
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
 
-.zona1{
-    position: absolute;
-    top: 0%;
-    z-index: auto;
-    z-index: 1;
-}
-
-.zona16, .zona2, .zona3, .zona4, .zona5,
-.zona6, .zona7, .zona8, .zona9, .zona10,
-.zona11, .zona12, .zona13, .zona14, .zona15{
-    position: absolute;
-    top: 0%;
-    z-index: auto;
-    visibility: hidden;
-}
-
-.zona1{
-    z-index: 1;
+    background-color: rgb(75, 75, 75, .6);
+    box-shadow: 10px 5px 5px black;
+    border-radius: 15px;
 }
 
 .textoEscenarios h1{
-    font-size: 30px;
-    padding-top: 5px;
-    padding-left: 5px;
+    color: azure;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgb(20, 20, 20);
 }
 
 .textoEscenarios p{
-    padding: 10px;
+    color: azure;
     text-align: justify;
-    font-size: 20px;
+    text-indent: 10px;
+}
+
+.carruselModificado{
+    border-radius: 15px;
+}
+
+.imgCarruselModificado img{
+    border-radius: 30px;
 }
 
 
+/* 
 .elipse1{
     position: absolute;
     border: 1px solid blue;
@@ -651,7 +629,7 @@
     z-index: 1;
     top: 40.8%;
     left: 57.5%;
-}
+} */
 
 /* ----------------- FINAL: ESCENARIOS ----------------- */
 
@@ -679,7 +657,7 @@
     font-size: 25px;
     margin-bottom: 15px;
     color: azure;
-    border-bottom: 1px solid rgba(225, 225, 225, 0.8);
+    border-bottom: 2px solid rgba(225, 225, 225, 0.8);
     text-align: center;
 }
 
