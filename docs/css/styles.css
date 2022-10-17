@@ -17,14 +17,14 @@
 
 /* ----------------- INICIO: HEADER ----------------- */
 .header{
-    grid-area: header;
     background-image: url(../assets/img/header/Banner3.jpg);
     background-size: cover;
-    background-position: 0% 20%;
+    /* background-position: 0% 20%; */
     background-repeat: no-repeat; 
+
 }
 
-.header a{
+.head a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,7 @@
     height: auto;
 }
 
-.header img{
+.head img{
     width: 40%;
 }
 /* ----------------- FINAL: HEADER ----------------- */
@@ -43,27 +43,18 @@
 .nav{ 
     display: flex;
     justify-content: center;
-    justify-content: center;
-   
-    background-color: azure;
+    padding-bottom: 15px;
 }
 
 .navContenedor{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
     width: 80%;
     height: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+
+    background-color: rgb(255,255,255, 0.8);
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
-.navContenedor a{
-    color: black;
-    text-decoration: none;
-    font-size: 30px;
-}
 /* ----------------- FINAL: NAV ----------------- */
 
 /* ----------------- INICIO: MAIN ----------------- */
@@ -742,6 +733,16 @@
     width: 80%;
 }
 
+.articuloProductos a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.articuloProductos a:visited {
+    color: black,
+}
+
 .contenedorProductos{
     display: flex;
     flex-direction: column;
@@ -776,16 +777,6 @@
 
 .imgAlterada div p{
     margin-top: 15px;
-}
-
-.contenedorProductos a{
-    list-style: none;
-    text-decoration: none;
-    color: black;
-}
-
-.contenedorProductos a:visited {
-    color: black,
 }
 
 .contenedorProductos div {

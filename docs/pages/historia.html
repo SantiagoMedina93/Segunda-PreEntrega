@@ -4,25 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>BloodborneWiki</title>
 </head>
 <body>
     <header class="header">
-        <a href="../index.html">
-            <img src="../assets/img/header/HeaderLogo1.png" alt="HeaderLogo2">
-        </a>
-    </header>
-
-    <nav class="nav">
-
-        <section class="navContenedor">
-            <a href="./historia.html">HISTORIA</a>
-            <a href="./escenarios.html">ESCENARIOS</a>
-            <a href="./jefes.html">JEFES</a>
-            <a href="./productos.html">PRODUCTOS</a>
+        <section class="head">
+          <a href="./index.html">
+              <img src="../assets/img/header/HeaderLogo1.png" alt="HeaderLogo2">
+          </a>
         </section>
-    </nav>
+  
+        <nav class="nav">
+            <section class="navbar navbar-expand-lg navContenedor">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/docs/index.html">INICIO</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./historia.html">HISTORIA</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./escenarios.html">ESCENARIOS</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./jefes.html">JEFES</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./productos.html">PRODUCTOS</a>
+                </li>
+  
+              </ul>
+  
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busca en el sitio" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">BUSCAR</button>
+              </form>
+            </div>
+  
+          </div>
+            </section>
+        </nav>
+    </header>
 
     <main class="main">
         <section class="mainHistoria">
@@ -36,13 +71,13 @@
                 <p>
                     Tratar toda la historia previa a Yharnam sería una tarea colosal y nos derivaría de nuestro objetivo. Aun así, creemos imprescindible nombrar a los Escolares que estudiaron en Byrgenwerth y realizaron el gran hallazgo que puso en marcha todo el argumento de Bloodborne. Los más relevantes de estos Escolares iniciales fueron el grupo formado por el Maestro Willem (líder de la academia), Laurence (el primer vicario), Caryll (la maestra en el crafteo de runas) y Micolash (que encontramos en la pesadilla de Mensis). Aparte de los cuatro también hay indicaciones de que dos Escolares más tuvieron un papel muy importante en los inicios: Gehrman (el primer cazador) y Lady Maria (mejor pupila de Gehrman que custodia el área de estudio de la Iglesia de la sanación).
                 </p>
-                <p>
-                    El momento decisivo llegó cuando todos ellos descubrieron el misterio que se ocultaba bajo las piedras de las criptas de Pthuemerian: La Antigua Sangre de Los Grandes que confirmaba la existencia de los mismos. Tras este gran hallazgo los objetivos de los Escolares cambiaron y tuvieron como principal objetivo la evolución, empujando los límites de la humanidad para alcanzar un estado mayor. Con tal de alcanzar ese plano elevado de conocimiento los Escolares se dividieron en dos grupos, ya que unos creían que lo lograrían mediante el estudio y uso de la Antigua Sangre (representada en el juego con los Ecos de sangre que recogemos) y los otros mantenían que el conocimiento se lograría con la Lucidez.       
-                </p>
                 <figure>
                     <img src="../assets/img/historia/art1-img1.jpg" alt="">
                     <img src="../assets/img/historia/art1-img2.jpg" alt="">
                 </figure>
+                <p>
+                    El momento decisivo llegó cuando todos ellos descubrieron el misterio que se ocultaba bajo las piedras de las criptas de Pthuemerian: La Antigua Sangre de Los Grandes que confirmaba la existencia de los mismos. Tras este gran hallazgo los objetivos de los Escolares cambiaron y tuvieron como principal objetivo la evolución, empujando los límites de la humanidad para alcanzar un estado mayor. Con tal de alcanzar ese plano elevado de conocimiento los Escolares se dividieron en dos grupos, ya que unos creían que lo lograrían mediante el estudio y uso de la Antigua Sangre (representada en el juego con los Ecos de sangre que recogemos) y los otros mantenían que el conocimiento se lograría con la Lucidez.       
+                </p>
                 <p>
                     En el primer grupo, que podrían llamarse los Revolucionarios, fueron liderados por Laurence, acompañado de Micolash, Gehrman y Maria, creyendo en el poder otorgado por la Sangre. Por otro lado, los estudiantes leales al Maestro Willem creyeron que el conocimiento expresado por los Ojos les llevaría a comprender los planos superiores en los que se hallaban Los Grandes y eso les permitiría elevar a la humanidad a ellos.
                 </p>
@@ -221,6 +256,8 @@
         </section>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
 
