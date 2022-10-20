@@ -154,7 +154,7 @@
 
 .footerContenedor{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
 
     width: 80%;
@@ -166,22 +166,27 @@
     justify-content: center;
     align-items: center;
 
-    width: 30%;
+    width: 20%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: rgb(75, 75, 75, .6);
+}
+
+.footerRedes ul{
+    margin: 0px;
+    padding: 0px;
 }
 
 .footerRedes li{
     list-style:none;
     
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .footerRedes h2{
     text-align: center;
-    border: 1px solid green;
+    background-color: azure;
     border-radius: 8px;
     margin: 15px 15px 15px 0px;
     padding: 10px 25px 10px 25px;
@@ -194,6 +199,7 @@
     grid-template-areas: 
     "imagenRedes textoRedes textoRedes textoRedes";
 
+    margin: 5px;
     color: black;
     text-decoration: none;
 }
@@ -202,8 +208,9 @@
     grid-area: textoRedes;
     justify-self: flex-start;
     align-self: center;
-
+    margin: 0px;
     font-size: 20px;
+    color: azure;
 }
 
 .footerRedes img{
@@ -211,7 +218,7 @@
     justify-self: flex-end;
     align-self: center;
 
-    width: 30%;
+    width: 45%;
     margin-right: 10px;
 }
 
@@ -221,23 +228,28 @@
     justify-content: center;
     align-items: center;
 
-    width: 30%;
+    width: 25%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: rgb(75, 75, 75, .6);
     
+}
+
+.footerJuegos ul{
+    margin: 0px;
+    padding: 0px;
 }
 
 .footerJuegos li{
     list-style:none;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .footerJuegos h2{
     text-align: center;
-    border: 1px solid green;
     border-radius: 8px;
+    background-color: azure;
     margin: 15px 15px 15px 0px;
     padding: 10px 25px 10px 25px;
 }
@@ -245,7 +257,7 @@
 .footerJuegos a{
     display: grid;
     grid-template-rows: 4;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 30% 70%;
     grid-template-areas: 
     "imagenJuegos  textoJuegos";
 
@@ -258,6 +270,8 @@
     justify-self: flex-start;
     align-self: center;
     font-size: 20px;
+    margin: 0px;
+    color: azure;
 }
 
 .footerJuegos img{
@@ -265,7 +279,7 @@
     justify-self: flex-end;
     align-self: center;
 
-    width: 30%;
+    width: 45%;
     margin-right: 10px;
 }
 
@@ -275,15 +289,18 @@
     justify-content: center;
     align-items: center;
 
-    width: 30%;
+    width: 50%;
     height: auto;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
     background-color: rgb(75, 75, 75, .6);
 }
 
 .footerContacto h2{
     text-align: center;
-    border: 1px solid green;
+    background-color: azure;
     border-radius: 8px;
     margin: 15px 15px 15px 0px;
     padding: 10px 25px 10px 25px;
@@ -294,6 +311,7 @@
     font-size: 18px;
     margin-bottom: 10px;
     padding-left: 5px;
+    color: azure;
 }
 
 .footerContacto ul{
@@ -304,6 +322,7 @@
     text-align: justify;
     margin-bottom: 5px;
     list-style: disc;
+    color: azure;
 }
 
 .footerContacto div{
@@ -318,6 +337,7 @@
 
 .footerContacto div button{
     padding: 10px;
+    border-radius: 10px;
 }
 /* ----------------- FINAL: FOOTER ----------------- */
 
@@ -331,7 +351,6 @@
 
     width: 80%;
     height: auto;
-    /* border: 1px solid red; */
 }
 
 .articuloHistoria{
@@ -418,6 +437,7 @@
 
 .textoEscenarios h1{
     color: azure;
+    font-size: 40px;
     margin-bottom: 15px;
     border-bottom: 2px solid rgb(20, 20, 20);
 }
@@ -632,6 +652,96 @@
 } */
 
 /* ----------------- FINAL: ESCENARIOS ----------------- */
+
+
+/* ----------------- INICIO: JEFES ----------------- */
+.mainJefes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.navJefes{
+    margin-bottom: 10px;
+    padding: 25px;
+
+    background-color: rgb(75, 75, 75, .6);
+    box-shadow: 10px 5px 5px black;
+    border-radius: 15px;
+}
+
+.navJefes a{
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid azure;
+    border-radius: 5px;
+    background-color: azure;
+
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.navJefes a:hover{
+    background: #444;
+    color: #eee;
+}
+
+.articulosJefes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    
+    background-color: rgb(75, 75, 75, .6);
+    box-shadow: 10px 5px 5px black;
+    border-radius: 15px;
+}
+
+.tituloJefes{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(20, 20, 20);
+    margin-bottom: 10px;
+}
+
+.tituloJefes h1{
+    color: azure;
+    font-size: 40px;
+}
+
+.tituloJefes img{
+    width: 5%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+
+.articulosJefes p{
+    color: azure;
+    text-align: justify;
+    text-indent: 10px;
+    line-height: 30px;
+}
+
+.articulosJefes iframe{
+    display: flex;
+    justify-content: center;
+    
+    width: 75%;
+    height: 50vh;
+    margin: 0px auto;
+    border-radius: 15px;
+}
+
+/* ----------------- FINAL: JEFES ----------------- */
+
 
 /* ----------------- INICIO: PRODUCTOS ----------------- */
 .mainProductos{
