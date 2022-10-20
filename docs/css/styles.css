@@ -188,7 +188,7 @@
     text-align: center;
     background-color: azure;
     border-radius: 8px;
-    margin: 15px 15px 15px 0px;
+    margin: 15px;
     padding: 10px 25px 10px 25px;
 }
 
@@ -250,7 +250,7 @@
     text-align: center;
     border-radius: 8px;
     background-color: azure;
-    margin: 15px 15px 15px 0px;
+    margin: 15px;
     padding: 10px 25px 10px 25px;
 }
 
