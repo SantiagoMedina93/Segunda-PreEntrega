@@ -3,6 +3,19 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+@font-face{
+    font-family: Poppins;
+                src: url(/docs/assets/font/Poppins/Poppins-LightItalic.ttf);
+}
+
+.fontFamily{
+    font-family: RobotoMono;
+    color: red;
+}
+
+
+
 .main, .footer{ 
     display: flex;
     justify-content: center;
@@ -181,6 +194,7 @@
     height: auto;
     border-radius: 15px;
     background-color: rgb(75, 75, 75, .6);
+    box-shadow: 10px 5px 5px black;
 }
 
 .footerRedes ul{
@@ -243,6 +257,7 @@
     height: auto;
     border-radius: 15px;
     background-color: rgb(75, 75, 75, .6);
+    box-shadow: 10px 5px 5px black;
     
 }
 
@@ -307,6 +322,7 @@
     padding-right: 15px;
     border-radius: 15px;
     background-color: rgb(75, 75, 75, .6);
+    box-shadow: 10px 5px 5px black;
 }
 
 .footerContacto h2{
