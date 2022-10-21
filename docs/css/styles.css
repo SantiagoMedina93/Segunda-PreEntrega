@@ -67,6 +67,9 @@
     width: 80%;
     height: auto;
 }
+.mainInicio p{
+    font-size: 35px;
+}
 
 .textoImagenInicio, .textoInicio{
     margin-top: 15px;
@@ -92,29 +95,38 @@
 
 .textoImagenInicio{
     display: grid;
-    grid-template-rows: 3;
+    grid-template-rows: 4;
     grid-template-columns: 20%;
     grid-template-areas: 
     "header header header header header header"
     "texto1 texto1 texto1 texto1 imagen1 imagen1"
     "texto2 texto2 texto2 texto2 imagen1 imagen1"
+    "texto3 texto3 texto3 texto3 texto3 texto3";
 }
 
 .textoImagenInicio h1{
     grid-area: header;
+    font-size: 40px;
 }
 
 .textoImagenInicio p:nth-child(2){
     grid-area: texto1;
+    /* color: red; */
 }
 
-.textoImagenInicio p:nth-child(4){
+.textoImagenInicio p:nth-child(3){
     grid-area: texto2;
+    /* color: blue; */
+}
+
+.textoImagenInicio p:nth-child(5){
+    grid-area: texto3;
+    /* color: green; */
 }
 
 .mainInicio img{
     grid-area: imagen1;
-    width: 85%;
+    width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
 
@@ -365,7 +377,7 @@
     padding: 20px;
 }
 
-.articuloHistoria h1{
+.articuloHistoria h2{
     color: azure;
     border-bottom: 2px solid rgb(20, 20, 20);
     font-size: 40px;
@@ -709,7 +721,7 @@
     margin-bottom: 10px;
 }
 
-.tituloJefes h1{
+.tituloJefes h2{
     color: azure;
     font-size: 40px;
 }
@@ -725,6 +737,7 @@
 .articulosJefes p{
     color: azure;
     text-align: justify;
+    font-size: 25px;
     text-indent: 10px;
     line-height: 30px;
 }
@@ -747,6 +760,13 @@
     display: flex;
     justify-content: center;
     width: 80%;
+}
+.listaAsideProductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+
 }
 
 .asideProductos{
@@ -841,7 +861,7 @@
     box-shadow: 2px 2px 2px rgb(95, 95, 95);
 
     margin-bottom: 20px;
-    width: 250px;
+    width: 180px;
     height: 220px;
 }
 
